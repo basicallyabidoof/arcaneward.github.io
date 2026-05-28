@@ -82,9 +82,9 @@
             conferences: ['BSides Rochester']
         },
         {
-            lat: 41.5868,
-            lng: -93.6250,
-            city: 'Des Moines, IA',
+            lat: 44.9778,
+            lng: -93.2650,
+            city: 'Minneapolis, MN',
             conferences: ['SecretCon']
         }
     ];
