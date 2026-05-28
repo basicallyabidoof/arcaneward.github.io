@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArcaneWard - Innovative Solutions</title>
+    <title>Sean Juroviesky | ArcaneWard — Cybersecurity Speaker &amp; Strategist</title>
+    <meta name="description" content="Sean Juroviesky is a cybersecurity strategist, DEF CON speaker, and senior architect. IAM, cloud security, and keynotes that translate technical risk for leaders.">
+    <meta name="author" content="Sean Juroviesky">
+    <link rel="canonical" href="https://arcaneward.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arcaneward.com/">
+    <meta property="og:title" content="Sean Juroviesky | ArcaneWard — Cybersecurity Speaker &amp; Strategist">
+    <meta property="og:description" content="Cybersecurity strategy for leaders who need clarity, not jargon. Speaker, architect, and IAM &amp; cloud security expert.">
+    <meta property="og:image" content="https://arcaneward.com/images/sean.jpg">
+    <meta property="og:site_name" content="ArcaneWard">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sean Juroviesky | ArcaneWard">
+    <meta name="twitter:description" content="Cybersecurity strategy for leaders who need clarity, not jargon. Speaker, architect, and IAM &amp; cloud security expert.">
+    <meta name="twitter:image" content="https://arcaneward.com/images/sean.jpg">
+
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">ArcaneWard</div>
-            <ul class="nav-links">
+            <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-links" id="site-nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
-                                 <li><a href="#talks">Talks</a></li>
-                                 <li><a href="#conferences">Conferences</a></li>
-                                 <li><a href="#volunteer">Volunteer</a></li>
-                                 <li><a href="#publications">Publications</a></li>
-                                 <li><a href="#schedule">Meet</a></li>
+                <li><a href="#speaking">Speaking</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#conferences">Conferences</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#schedule">Meet</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -28,9 +56,22 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to ArcaneWard</h1>
-            <p><i class="fas fa-hat-wizard" style="margin-right: 10px; color: var(--secondary-color);"></i>Innovative cybersecurity solutions, forged with arcane wisdom</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <p class="hero-eyebrow"><i class="fas fa-hat-wizard" aria-hidden="true"></i> ArcaneWard</p>
+            <h1>Cybersecurity strategy for leaders who need clarity, not jargon</h1>
+            <p class="hero-subtitle">Speaker · Architect · IAM &amp; cloud security</p>
+            <div class="hero-ctas">
+                <a href="#speaking" class="cta-button">Book a Keynote</a>
+                <a href="https://calendar.app.google/KDKQpTQcWT9Hcps37" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-secondary">Schedule a Consult</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Credibility highlights">
+        <div class="trust-bar-inner">
+            <span class="trust-badge"><i class="fas fa-shield-halved" aria-hidden="true"></i> DEF CON Speaker</span>
+            <span class="trust-badge"><i class="fas fa-users" aria-hidden="true"></i> Blue Team Con</span>
+            <span class="trust-badge"><i class="fas fa-music" aria-hidden="true"></i> SoundCloud</span>
+            <span class="trust-badge"><i class="fas fa-flag" aria-hidden="true"></i> BSides Community</span>
         </div>
     </section>
 
@@ -38,28 +79,72 @@
         <h2>Our Services</h2>
         <div class="service-cards">
             <div class="card">
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <h3>Advanced Identity Access Management Solutions</h3>
+                <p>Design IAM programs that scale with your organization — not against it.</p>
             </div>
             <div class="card">
-                <i class="fas fa-balance-scale"></i>
+                <i class="fas fa-balance-scale" aria-hidden="true"></i>
                 <h3>Risk Management</h3>
+                <p>Turn complex threat landscapes into actionable priorities executives can act on.</p>
             </div>
             <div class="card">
-                <i class="fas fa-cloud-upload-alt"></i>
+                <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
                 <h3>Cloud Security Offerings</h3>
+                <p>Secure cloud adoption with practical guidance grounded in real-world architecture.</p>
             </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <h2>About Us</h2>
+        <blockquote class="pull-quote">
+            "A rare translator who can bridge the gap between the highly technical world and the executive boardroom."
+        </blockquote>
         <div class="about-content">
             <img src="images/sean.jpg" alt="Sean Juroviesky" class="about-image">
             <div class="bio">
-                <p>Sean Juroviesky is a leading cybersecurity strategist who brings a decade of front-line experience from the tech, medical, and non-profit sectors to the main stage. As a senior cybersecurity architect for the global music platform SoundCloud, they don't just talk about theory they live on the front lines of cyber defense every day.</p>
-                <p>Sean is a rare "translator" who can bridge the gap between the highly technical world (as a respected speaker at elite cons like DEF CON and Blue Team Con) and the executive boardroom. Sean excels at demystifying complex threats and transforming security from a technical cost center into a core business enabler. Their keynotes focus on practical strategy, cultural change, and aligning security with business outcomes.</p>
+                <p>Sean Juroviesky is a leading cybersecurity strategist who brings a decade of front-line experience from the tech, medical, and non-profit sectors to the main stage. As a senior cybersecurity architect for the global music platform SoundCloud, they don't just talk about theory — they live on the front lines of cyber defense every day.</p>
+                <blockquote class="pull-quote pull-quote-inline">
+                    "Transforming security from a technical cost center into a core business enabler."
+                </blockquote>
+                <p>Sean is a respected speaker at elite cons like DEF CON and Blue Team Con who excels at demystifying complex threats. Their keynotes focus on practical strategy, cultural change, and aligning security with business outcomes.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="speaking" class="speaking">
+        <h2>Speaking Topics</h2>
+        <p class="section-subtitle">Available for keynotes, conference talks, and executive workshops.</p>
+        <div class="speaking-grid">
+            <article class="speaking-card">
+                <h3>Non-Human Identity (NHI) Security</h3>
+                <p class="speaking-meta"><span>Practitioners &amp; architects</span><span>45–60 min talk</span></p>
+                <p>How machine identities, service accounts, and API keys create hidden attack surfaces — and what to do about them.</p>
+            </article>
+            <article class="speaking-card">
+                <h3>IAM as a Business Enabler</h3>
+                <p class="speaking-meta"><span>Executives &amp; security leaders</span><span>Keynote</span></p>
+                <p>Reframe identity programs from gatekeeping overhead into strategic infrastructure that accelerates the business.</p>
+            </article>
+            <article class="speaking-card">
+                <h3>Cloud Security Strategy</h3>
+                <p class="speaking-meta"><span>Engineering &amp; leadership</span><span>45 min talk</span></p>
+                <p>Practical cloud security without the buzzwords — shared responsibility, automation, and risk prioritization that sticks.</p>
+            </article>
+            <article class="speaking-card">
+                <h3>Building Security Culture</h3>
+                <p class="speaking-meta"><span>All audiences</span><span>Keynote or panel</span></p>
+                <p>Why culture change outlasts any tool purchase, and how to make security everyone's job without burning people out.</p>
+            </article>
+            <article class="speaking-card">
+                <h3>Risk Management for Leaders</h3>
+                <p class="speaking-meta"><span>C-suite &amp; boards</span><span>Workshop or keynote</span></p>
+                <p>Demystify cyber risk for decision-makers who need clarity to allocate resources and set direction.</p>
+            </article>
+        </div>
+        <div class="speaking-cta">
+            <a href="mailto:sean@arcaneward.com?subject=Speaking%20Inquiry" class="cta-button">Inquire About Speaking</a>
         </div>
     </section>
 
@@ -67,7 +152,7 @@
         <h2>Talks</h2>
         <div class="video-container">
             <div class="video-item">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PL0xteSjSFU0wxg8YzJ_K3lCKFEei_DrQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PL0xteSjSFU0wxg8YzJ_K3lCKFEei_DrQE" title="A playlist of Sean Juroviesky's talks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>A Playlist of My Talks</p>
             </div>
         </div>
@@ -76,6 +161,13 @@
     <section id="conferences" class="conferences">
         <h2>Conferences</h2>
         <p class="section-subtitle">An incomplete list of conferences I attended and can strongly recommend.</p>
+
+        <div class="conference-map-wrapper">
+            <h3 class="map-heading"><i class="fas fa-map-marked-alt" aria-hidden="true"></i> Where I've Been</h3>
+            <p class="map-subtitle">Click a marker to see which conferences I recommend in each city.</p>
+            <div id="conference-map" role="region" aria-label="Interactive map of recommended conferences"></div>
+        </div>
+
         <div class="conference-list">
             <div class="conference-item">
                 <img src="images/conferences/cyphercon.png" alt="Cyphercon Logo">
@@ -168,13 +260,13 @@
         <h2>Volunteer Work</h2>
         <div class="service-cards">
             <div class="card">
-                <i class="fas fa-hat-wizard"></i>
-                <h3><a href="https://tfhcompetition.com" target="_blank" style="color: inherit; text-decoration: none;">tfhcompetition.com</a></h3>
+                <i class="fas fa-hat-wizard" aria-hidden="true"></i>
+                <h3><a href="https://tfhcompetition.com" target="_blank" rel="noopener noreferrer">tfhcompetition.com</a></h3>
                 <p>I help run the TinFoil Hat competition that appears at conferences across the midwest.</p>
             </div>
             <div class="card">
-                <i class="fas fa-language"></i>
-                <h3><a href="https://cyberpolyglots.org" target="_blank" style="color: inherit; text-decoration: none;">cyberpolyglots.org</a></h3>
+                <i class="fas fa-language" aria-hidden="true"></i>
+                <h3><a href="https://cyberpolyglots.org" target="_blank" rel="noopener noreferrer">cyberpolyglots.org</a></h3>
                 <p>A community for people in cybersecurity who speak multiple languages or who are interested in linguistics.</p>
             </div>
         </div>
@@ -184,17 +276,17 @@
         <h2>Publications</h2>
         <div class="service-cards">
             <div class="card">
-                <i class="fas fa-scroll"></i>
+                <i class="fas fa-scroll" aria-hidden="true"></i>
                 <h3>Past Publications</h3>
-                <ul style="list-style: none; padding: 0; text-align: left; margin-top: 1rem;">
-                    <li style="margin-bottom: 0.5rem;"><a href="https://docs.google.com/document/d/1ztDC4GkEcTRGlpCQT3b2dAUCKxxMw9-Q5g48R9wRvMY/edit?usp=sharing" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 500;"><i class="fas fa-file-alt" style="margin-right: 8px; font-size: 1rem; color: var(--secondary-color);"></i>Server-2-Server Data Harvesting</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="https://docs.google.com/document/d/1arq1AwjImSTe5NooCUKgfRWoEj8xnecMysD4IB65dCo/edit?usp=drive_link" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 500;"><i class="fas fa-file-alt" style="margin-right: 8px; font-size: 1rem; color: var(--secondary-color);"></i>Navigating Technical Debt in Automated Infrastructure</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="https://docs.google.com/document/d/1eq-yquOelVOSrkLEdCJR3Gt5BMpUFrQUyVrWwV5wek8/edit?usp=sharing" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 500;"><i class="fas fa-file-alt" style="margin-right: 8px; font-size: 1rem; color: var(--secondary-color);"></i>Forging Collaborative IAM Programs</a></li>
-                    <li><a href="https://docs.google.com/document/d/1ocC3TV9g7-JyDYDVxmCHz7vUh_0Xpr4VqNCzmu_oL_I/edit?usp=sharing" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 500;"><i class="fas fa-file-alt" style="margin-right: 8px; font-size: 1rem; color: var(--secondary-color);"></i>Easily Resolved Persistently Exploited</a></li>
+                <ul class="publication-list">
+                    <li><a href="https://docs.google.com/document/d/1ztDC4GkEcTRGlpCQT3b2dAUCKxxMw9-Q5g48R9wRvMY/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Server-2-Server Data Harvesting</a></li>
+                    <li><a href="https://docs.google.com/document/d/1arq1AwjImSTe5NooCUKgfRWoEj8xnecMysD4IB65dCo/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Navigating Technical Debt in Automated Infrastructure</a></li>
+                    <li><a href="https://docs.google.com/document/d/1eq-yquOelVOSrkLEdCJR3Gt5BMpUFrQUyVrWwV5wek8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Forging Collaborative IAM Programs</a></li>
+                    <li><a href="https://docs.google.com/document/d/1ocC3TV9g7-JyDYDVxmCHz7vUh_0Xpr4VqNCzmu_oL_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Easily Resolved Persistently Exploited</a></li>
                 </ul>
             </div>
-            <div class="card" style="border: 2px solid var(--secondary-color);">
-                <i class="fas fa-book-journal-whills"></i>
+            <div class="card card-highlight">
+                <i class="fas fa-book-journal-whills" aria-hidden="true"></i>
                 <h3>Upcoming Book: NHI Security</h3>
                 <p>A comprehensive upcoming guide diving deep into Non-Human Identity (NHI) Security. Coming soon!</p>
             </div>
@@ -204,14 +296,14 @@
     <section id="schedule" class="schedule">
         <h2>Schedule a Meeting</h2>
         <p>Interested in collaborating or need a consultation? Schedule a meeting with me directly on my calendar.</p>
-        <a href="https://calendar.app.google/KDKQpTQcWT9Hcps37" target="_blank" class="cta-button">Book Now</a>
+        <a href="https://calendar.app.google/KDKQpTQcWT9Hcps37" target="_blank" rel="noopener noreferrer" class="cta-button">Book Now</a>
     </section>
 
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <div class="contact-info">
             <p>Contact us at: <a href="mailto:sean@arcaneward.com">sean@arcaneward.com</a></p>
-            <p style="margin-top: 1rem;">Find me on Mastodon: <a href="https://hachyderm.io/@witch_of_winter" target="_blank" rel="me"><i class="fab fa-mastodon"></i> @witch_of_winter</a></p>
+            <p class="contact-mastodon">Find me on Mastodon: <a href="https://hachyderm.io/@witch_of_winter" target="_blank" rel="me noopener noreferrer"><i class="fab fa-mastodon" aria-hidden="true"></i> @witch_of_winter</a></p>
         </div>
     </section>
 
@@ -224,14 +316,17 @@
             <div class="footer-section">
                 <h3>Connect With Us</h3>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/sean-juroviesky/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/basicallyabidoof"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sean-juroviesky/" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/basicallyabidoof" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 ArcaneWard. All rights reserved.</p>
+            <p>&copy; 2026 ArcaneWard. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="main.js"></script>
 </body>
-</html> 
+</html>
