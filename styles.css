@@ -297,6 +297,10 @@ nav {
     border: 2px solid var(--secondary-color);
 }
 
+.card-highlight .cta-button {
+    margin-top: 1.25rem;
+}
+
 .publication-list {
     list-style: none;
     padding: 0;
