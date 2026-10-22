@@ -379,6 +379,30 @@ nav {
     margin-bottom: 1rem;
 }
 
+.public-key {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--dark-bg, #1a1a2e);
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.public-key h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.public-key code {
+    font-family: monospace;
+    font-size: 0.8rem;
+    word-break: break-all;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
 /* Speaking Section */
 .speaking {
     padding: 5rem 1rem;
